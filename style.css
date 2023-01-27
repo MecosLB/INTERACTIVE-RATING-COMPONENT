@@ -34,7 +34,7 @@ svg {
 
 body {
     font-family: 'Overpass', sans-serif;
-    /* background-color: var(--dark_blue); */
+    background-color: hsl(220deg 14% 9%);
 }
 
 p {
@@ -68,7 +68,8 @@ section {
     margin-bottom: var(--rem_basic);
 }
 
-.card-rating>h1 {
+.card-rating>h1,
+.card-thank>h2 {
     font-weight: 700;
     font-size: var(--rem_basic);
     color: white;
@@ -101,8 +102,8 @@ section {
 }
 
 .selected {
-    color: white;
-    background-color: var(--orange);
+    color: white !important;
+    background-color: var(--orange) !important;
 }
 
 .btn-orange {
@@ -118,4 +119,39 @@ section {
 .btn-orange:hover {
     color: var(--orange);
     background-color: white;
+}
+
+.card-thank {
+    text-align: center;
+    color: var(--light_grey);
+}
+
+.card-thank>img {
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+.card-thank .final-rate {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.final-rate {
+    color: var(--orange);
+    background-color: hsl(var(--medium_grey), 0.2);
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.card-thank>*:not(:last-child) {
+    margin-bottom: var(--rem_basic);
+}
+
+.d-none {
+    display: none !important;
+}
+
+.attribution {
+    color: white;
 }
